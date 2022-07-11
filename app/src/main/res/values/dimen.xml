@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="commonFontSize">40sp</dimen>
+    <dimen name="timeFontSize">30sp</dimen>
+    <dimen name="bigFontSize">50sp</dimen>
+    <dimen name="unitFontSize">20sp</dimen>
+    <dimen name="minLayoutHeight">600dp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">FitnessAppProject</string>
+
+    <string name="close_connection">Verbindung trennen</string>
+
+    <string name="start_search">Suche starten</string>
+    <string name="stop_search">Suche stoppen</string>
+    <string name="devices_found">Gefundene Geräte:</string>
+    <string name="unknown_device">Unbekanntes Gerät</string>
+
+    <string name="connect_new_device">Neues Gerät verbinden</string>
+    <string name="connect_last_device">Letztes Gerät verbinden</string>
+
+    <string name="connection">Verbindung:</string>
+    <string name="connected">Verbunden</string>
+    <string name="disconnected">nicht Verbunden</string>
+    <string name="bluetooth_not_available">Bluetooth nicht verfügbar</string>
+
+    <string name="missing_permission">Fehlende Berechtigung.</string>
+    <string name="missing_location_permission">Fehlende Berechtigung.</string>
+    <string name="bluetooth_not_enabled">Bluetooth wurde nicht aktiviert.</string>
+    <string name="no_stored_device">Es existiert kein gespeichertes Gerät</string>
+    <string name="no_selected_device">Es wurde kein Gerät ausgewählt</string>
+
+    <string name="device_name">Gerätename:</string>
+    <string name="device_mac">Geräte-Mac:</string>
+    <string name="heart">Herz</string>
+    <string name="bpm">%d bpm</string>
+
+    <string name="no_heart_rate">Keine Herzdaten</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Weiter</string>
+    <string name="average">Mittel</string>
+
+    <!-- Hauptmenü -->
+    <string name="bikeRun">BikeRun</string>
+    <string name="windsurf">Windsurf</string>
+    <string name="sup">SUP</string>
+    <string name="sail">Sail</string>
+    <string name="cardio">Cardio</string>
+    <string name="track">Track</string>
+    <string name="settings">Einstellungen</string>
+
+    <!-- Preference Titles -->
+    <string name="user_header">Benutzer</string>
+    <string name="body_header">Körperdaten</string>
+
+    <!-- User Preferences -->
+    <string name="name_title">Name</string>
+    <string name="mail_title">E-Mail</string>
+
+    <!-- Body Preferences -->
+    <string name="age_title">Alter</string>
+    <string name="gender_title">Geschlecht</string>
+    <string name="height_title">Größe</string>
+    <string name="weight_title">Gewicht</string>
+    <string name="save">Speichern</string>
+    <string name="connectHR">Pulssensor verbinden</string>
+
+    <string name="status">Sensorstatus</string>
+    <string name="cancel_training">Training beenden?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+
+    <string-array name="gender">
+        <item>Männlich</item>
+        <item>Weiblich</item>
+    </string-array>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main_menu">
+
+    <fragment
+        android:id="@+id/navigation_main_menu"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.MainMenuFragment"
+        android:label="MainMenu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_navigation_main_menu_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
+        <action
+            android:id="@+id/action_navigation_main_menu_to_navigation_cardio"
+            app:destination="@id/navigation_cardio" />
+        <action
+            android:id="@+id/action_navigation_main_menu_to_navigation_track"
+            app:destination="@id/navigation_track" />
+        <action
+            android:id="@+id/action_navigation_main_menu_to_bikeRunPagerFragment"
+            app:destination="@id/navigation_bikerun" />
+        <action
+            android:id="@+id/action_navigation_main_menu_to_windsurfPagerFragment"
+            app:destination="@id/navigation_windsurf" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_cardio"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.CardioFragment"
+        android:label="Cardio"
+        tools:layout="@layout/fragment_cardio" />
+
+    <fragment
+        android:id="@+id/navigation_track"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.TrackFragment"
+        android:label="Track"
+        tools:layout="@layout/fragment_track" />
+
+    <fragment
+        android:id="@+id/navigation_bikerun"
+        app:popUpTo="@id/navigation_main_menu"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.BikeRunPagerFragment"
+        android:label="BikeRunPagerFragment" />
+
+    <fragment
+        android:id="@+id/navigation_windsurf"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.WindsurfPagerFragment"
+        android:label="WindsurfPagerFragment" />
+</navigation>

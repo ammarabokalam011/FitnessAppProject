@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="commonFontSize">60sp</dimen>
+    <dimen name="bigFontSize">80sp</dimen>
+</resources>
