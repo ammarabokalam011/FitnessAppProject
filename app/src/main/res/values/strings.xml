@@ -71,4 +71,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="jogging">Jogging</string>
+    <string name="policy">Our Policy</string>
+    <string name="terms_of_use">Our Term Of Use</string>
+
 </resources>

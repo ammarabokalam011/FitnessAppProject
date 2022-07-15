@@ -74,6 +74,13 @@ class MainMenuFragment : Fragment(), MenuRecyclerViewAdapter.ItemClickListener {
         )
         items.add(
             MenuEntry(
+                getString(org.osmdroid.library.R.string.about),
+                R.drawable.baseline_info_24,
+                R.id.action_navigation_main_menu_to_navigation_about
+            )
+        )
+        items.add(
+            MenuEntry(
                 getString(R.string.settings),
                 R.drawable.baseline_settings_24,
                 R.id.action_navigation_main_menu_to_navigation_settings
