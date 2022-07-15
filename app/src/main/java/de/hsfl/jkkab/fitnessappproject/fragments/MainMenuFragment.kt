@@ -20,9 +20,16 @@ class MainMenuFragment : Fragment(), MenuRecyclerViewAdapter.ItemClickListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMainMenuBinding.inflate(inflater, container, false)
         val items: MutableList<MenuEntry> = ArrayList<MenuEntry>()
+        items.add(
+            MenuEntry(
+                getString(R.string.jogging),
+                R.drawable.baseline_directions_run_24,
+                R.id.action_navigation_main_menu_to_joggingPagerFragment
+            )
+        )
         items.add(
             MenuEntry(
                 getString(R.string.bikeRun),

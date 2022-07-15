@@ -23,6 +23,9 @@
             android:id="@+id/action_navigation_main_menu_to_bikeRunPagerFragment"
             app:destination="@id/navigation_bikerun" />
         <action
+            android:id="@+id/action_navigation_main_menu_to_joggingPagerFragment"
+            app:destination="@id/navigation_jogging" />
+        <action
             android:id="@+id/action_navigation_main_menu_to_windsurfPagerFragment"
             app:destination="@id/navigation_windsurf" />
     </fragment>
@@ -51,6 +54,11 @@
         android:name="de.hsfl.jkkab.fitnessappproject.fragments.BikeRunPagerFragment"
         android:label="BikeRunPagerFragment" />
 
+    <fragment
+        android:id="@+id/navigation_jogging"
+        android:name="de.hsfl.jkkab.fitnessappproject.fragments.JoggingPagerFragment"
+        android:label="JoggingPagerFragment"
+        app:popUpTo="@id/navigation_main_menu" />
     <fragment
         android:id="@+id/navigation_windsurf"
         android:name="de.hsfl.jkkab.fitnessappproject.fragments.WindsurfPagerFragment"
