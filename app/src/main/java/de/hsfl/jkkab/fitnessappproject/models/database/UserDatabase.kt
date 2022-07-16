@@ -8,16 +8,18 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 
-@Database(entities = [User::class], version = 4, exportSchema = false)
+@Database(entities = [User::class,Sport::class], version = 5, exportSchema = false)
 abstract class UserDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao
+    abstract fun sportDao(): SportDao
 
 
 
     private class PopulateDbAsync internal constructor(db: UserDatabase) :
         AsyncTask<Void?, Void?, Void?>() {
-        private val dao: UserDao
+        private val userDao: UserDao
+        private val sportDao: SportDao
         var names = arrayOf("alex", "max", "michelle")
         override fun doInBackground(vararg p0: Void?): Void? {
             /*if (dao.getUser() == null) {
@@ -30,7 +32,8 @@ abstract class UserDatabase : RoomDatabase() {
         }
 
         init {
-            dao = db.userDao()
+            userDao = db.userDao()
+            sportDao = db.sportDao()
         }
     }
 

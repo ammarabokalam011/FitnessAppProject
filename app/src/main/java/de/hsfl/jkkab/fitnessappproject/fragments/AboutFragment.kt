@@ -19,11 +19,6 @@ import de.hsfl.jkkab.fitnessappproject.R
  */
 class AboutFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,6 +28,7 @@ class AboutFragment : Fragment() {
         val tvPolicy:TextView=view.findViewById(R.id.tvPolicy)
         val tvTerm:TextView=view.findViewById(R.id.tvTermOfUse)
         setupHyperLink(tvPolicy)
+        setupHyperLink(tvTerm)
         tvPolicy.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dailyworkoutapps.com/privacy-policy.html"))
             startActivity(browserIntent)
@@ -41,8 +37,6 @@ class AboutFragment : Fragment() {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dailyworkoutapps.com/terms-of-use.html"))
             startActivity(browserIntent)
         }
-        setupHyperLink(tvTerm)
-
         return view
     }
 
